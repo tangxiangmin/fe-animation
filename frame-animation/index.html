@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .bird {
+                margin: 50px;
+                position: relative;
+                width: 46px;
+                height: 31px;
+                background-image: url("./bird.png");
+
+                background-repeat: no-repeat;
+            }
+            @keyframes fly-bird {
+                0% {
+                    background-position: 0;
+                }
+
+                33.3333% {
+                    background-position: -47px;
+                }
+
+                66.6666% {
+                    background-position: -94px;
+                }
+            }
+
+            .bird-fly {
+                animation: fly-bird 0.4s steps(1) infinite;
+            }
+          
+            .bird1 {
+                background-position: 0 center;
+            }
+            .bird2 {
+                background-position: -47px center;
+            }
+            .bird3 {
+                background-position: -94px center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bird bird1"></div>
+        <div class="bird bird2"></div>
+        <div class="bird bird3"></div>
+
+        <div class="bird bird-fly"></div>
+    </body>
+</html>
